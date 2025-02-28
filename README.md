@@ -1,1 +1,1 @@
-# DevBhoomi-Explore
+this website, "DevBhoomi Explore," is a comprehensive platform designed to help travelers explore the beauty of Uttarakhand. It provides information about various tourist destinations in the state, making it easier for visitors to plan their trips.
