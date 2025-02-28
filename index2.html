@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBhoomi Explore</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script defer src="script2.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <h1><span class="blue-text">DevBhoomi</span> <span class="white-text">Explore</span></h1>
+            <div class="button-container">
+                <button class="service-btn"><i class="fas fa-hotel"></i> Stays</button>
+                <button class="service-btn"><i class="fas fa-helicopter"></i> Helipad</button>
+                <button class="service-btn"><i class="fas fa-car"></i> Car Rentals</button>
+                <button class="service-btn"><i class="fas fa-motorcycle"></i> Bike Rentals</button>
+                <button class="service-btn"><i class="fas fa-map-marker-alt"></i> Attractions</button>
+            </div>
+        </div>
+        <div class="right-section">
+            <button class="btn" id="signInBtn">Sign In</button>
+            <button class="btn" id="logInBtn">Log In</button>
+            <div class="menu-icon">☰</div>
+        </div>
+    </header>
+    
+    <!-- Dropdown Menu -->
+    <div class="dropdown-menu">
+        <button class="dropdown-item">Profile</button>
+        <button class="dropdown-item">Payments</button>
+        <button class="dropdown-item">Customer Service</button>
+        <button class="dropdown-item logout">Log Out</button>
+    </div>
+
+    <!-- Sign In Form -->
+    <div class="form-container" id="signInForm">
+        <h2>Sign In</h2>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="text" placeholder="Contact No">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button class="btn">Submit</button>
+        <button class="close-btn">Close</button>
+    </div>
+
+    <!-- Log In Form -->
+    <div class="form-container" id="logInForm">
+        <h2>Log In</h2>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button class="btn">Submit</button>
+        <button class="close-btn">Close</button>
+    </div>
+
+</body>
+</html>

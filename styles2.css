@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(11, 11, 235);
+}
+.left-section h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+.blue-text {
+    color: rgb(217, 217, 229);
+}
+.white-text {
+    color: white;
+}
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.menu-icon {
+    font-size: 24px;
+    color: white;
+    background-color: blue;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 150px;
+    flex-direction: column;
+}
+.dropdown-item {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    color: black;
+}
+.dropdown-item:hover {
+    background-color: lightgray;
+}
+.logout {
+    color: rgb(15, 3, 234);
+    font-weight: bold;
+}
+
+/* Service Buttons Styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.service-btn {
+    background-color: rgb(11, 11, 235);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.service-btn i {
+    font-size: 16px;
+}
+.service-btn:hover {
+    background-color: rgb(8, 8, 200);
+}
+
+/* Form Styling */
+.form-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+.form-container h2 {
+    margin-bottom: 15px;
+}
+.form-container input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.close-btn {
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
