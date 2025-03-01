@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBhoomi Explore</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <h1><span class="blue-text">DevBhoomi</span> <span class="white-text">Explore</span></h>
+            <div class="button-container">
+                <a href="stay.html">
+                    <button class="service-btn"><i class="fas fa-hotel"></i> Stays</button>
+                </a>                
+                <a href="helipad.html">
+                    <button class="service-btn"><i class="fas fa-helipad"></i> Helipad</button>
+                </a>   
+                <a href="car rentals.html">
+                    <button class="service-btn"><i class="fas fa-car"></i> Car Rental</button>
+                </a>                
+                <a href="Bike Rental.html">
+                    <button class="service-btn"><i class="fas fa-motorcycle"></i> Bike Rental</button>
+                </a> 
+                <a href="Attraction.html">  
+                <button class="service-btn"><i class="fas fa-map-marker-alt"></i> Attractions</button>
+                </a>
+            </div>
+        </div>
+        <div class="right-section">
+            <button class="btn" id="signInBtn">Sign In</button>
+            <button class="btn" id="logInBtn">Log In</button>
+            <div class="menu-icon">☰</div>
+        </div>
+    </header>
+    
+    <!-- Explore Uttarakhand Section -->
+    <section class="explore-section">
+        <h2>Explore Uttarakhand</h2>
+        <p>These popular destinations have a lot to offer</p>
+        <div class="destination-container">
+            <div class="destination-card" onclick="openDestination('nainital')">
+                <img src="images/nainital.jpg" alt="Nainital">
+                <h3>Nainital</h3>
+                <p>1,200 properties</p>
+            </div>
+            <div class="destination-card" onclick="openDestination('mussoorie')">
+                <img src="images/mussoorie.jpg" alt="Mussoorie">
+                <h3>Mussoorie</h3>
+                <p>850 properties</p>
+            </div>
+            <div class="destination-card" onclick="openDestination('haridwar')">
+                <img src="images/haridwar.jpg" alt="Haridwar">
+                <h3>Haridwar</h3>
+                <p>1,500 properties</p>
+            </div>
+            <div class="destination-card" onclick="openDestination('rishikesh')">
+                <img src="images/rishikesh.jpg" alt="Rishikesh">
+                <h3>Rishikesh</h3>
+                <p>1,000 properties</p>
+            </div>
+            <div class="destination-card" onclick="openDestination('jimcorbett')">
+                <img src="images/jimcorbett.jpg" alt="Jim Corbett">
+                <h3>Jim Corbett</h3>
+                <p>600 properties</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <div class="auth-popup" id="loginPopup">
+        <div class="auth-container">
+            <span class="close-btn" onclick="closePopup('loginPopup')">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign Up Section -->
+    <div class="auth-popup" id="signupPopup">
+        <div class="auth-container">
+            <span class="close-btn" onclick="closePopup('signupPopup')">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <input type="text" id="signupName" placeholder="Full Name" required>
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
