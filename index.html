@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devभूमि</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <h1><span class="blue-text">Devभूमि</span> <span class="white-text">Explore</span></h1>
+        </div>
+        <div class="right-section">
+            <input type="text" class="search-input" placeholder="Search destinations...">
+        <button class="search-btn"><i class="fas fa-search"></i> Search</button>
+            <button class="btn blue-btn" id="Home"><i class="fas fa-user"></i> Home</button>
+            <button class="btn blue-btn" id="signupBtn" onclick="window.location.href='signup.html';">
+                <i class="fas fa-sign-in-alt"></i> Sign up
+            </button>
+            <button class="btn blue-btn" id="logInBtn" onclick="window.location.href='login.html';">
+                <i class="fas fa-sign-in-alt"></i> Log In
+            </button>
+            
+            <div class="menu-icon">☰</div>
+        </div>
+    </header>
+    <!-- Dropdown Menu -->
+    <div class="dropdown-menu">
+        <button class="dropdown-item" onclick="window.location.href='profile.html';">Profile</button>
+        <button class="dropdown-item">chat us </button>
+        <button class="dropdown-item" onclick="window.location.href='wishlist.html';">Wishlist</button>
+        <button class="dropdown-item" onclick="window.location.href='terms.html';">Terms & Conditions</button>
+        <button class="dropdown-item logout">Log Out</button>
+    </div>
+    <main>
+        <div class="background-image"></div>
+    </main>
+    <div class="hero-text">
+        <h1>Start your journey with <span class="highlight">Devभूमि Explore</span></h1>
+        <h3>"Wherever you go, we make it special"</h3>
+    </div>
+    <section class="popular-destinations">
+        <h2 class="section-title">
+            Popular Destinations  
+            <span class="section-subtitle">Find peace in the lap of the Himalayas!</span>
+        </h2>
+        <h3 class="hill-title">Hill Stations</h3>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <!-- Hill Stations List -->
+        <div class="swiper-slide destination" data-name="Auli">
+            <a href="auli.html">
+            <img src="auli.jpeg" alt="Auli">
+            <div class="number-box">1</div>
+            </a>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Auli</p>
+            <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        
+        <div class="swiper-slide destination" data-name="Mussoorie">
+            <a href="mussoorie.html">
+                <div class="number-box">2</div>
+                <img src="mussoorie.jpeg" alt="Mussoorie">
+            </a>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Mussoorie</p>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+        </div>
+        
+        <div class="swiper-slide destination" data-name="Chopta">
+            <img src="chopta.jpeg" alt="Chopta">
+            <div class="number-box">3</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Chopta</p>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+        </div>
+        
+        <div class="swiper-slide destination" data-name="Lansdowne">
+            <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/09/01172338/PLACES-IN-LANDSDOWN-FEATURE-compressed.jpg" alt="Lansdowne">
+            <div class="number-box">4</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Lansdowne</p>
+            <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+        </div>
+
+        <div class="swiper-slide destination" data-name="Munsiyari">
+            <img src="https://ik.imagekit.io/shortpedia/Voices/wp-content/uploads/2021/08/munsiyari-1200x900-1.jpg" alt="Munsiyari">
+            <div class="number-box">5</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Munsiyari</p>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+        </div>
+        
+        <div class="swiper-slide destination" data-name="Dhanaulti">
+            <img src="https://static.wixstatic.com/media/b9e848_42a06063bea24b209b57934090c7e9c2~mv2.jpg/v1/fill/w_980,h_621,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/b9e848_42a06063bea24b209b57934090c7e9c2~mv2.jpg" alt="Dhanaulti">
+            <div class="number-box">6</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Dhanaulti</p>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+        </div>
+
+        <div class="swiper-slide destination" data-name="Almora">
+            <img src="https://www.adotrip.com/public/images/city/5c3f1905177f1-Almora_Attractions.jpg" alt="Almora">
+            <div class="number-box">7</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Almora</p>
+            <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+        </div>
+
+        <div class="swiper-slide destination" data-name="Ranikhet">
+            <img src="https://www.tusktravel.com/blog/wp-content/uploads/2021/01/Best-Places-to-Visit-Ranikhet.jpg" alt="Ranikhet">
+            <div class="number-box">8</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Ranikhet</p>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+        </div>
+
+        <div class="swiper-slide destination" data-name="Bhimtal">
+            <img src="https://img.veenaworld.com/wp-content/uploads/2022/10/12-Most-Beautiful-Places-to-Visit-in-Bhimtal-scaled-e1669312913111.jpg" alt="Bhimtal">
+            <div class="number-box">9</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Bhimtal</p>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+        </div>
+
+        <div class="swiper-slide destination" data-name="Nainital">
+            <img src="https://wallpaperaccess.com/full/9071059.jpg" alt="Nainital">
+            <div class="number-box">10</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Nainital</p>
+            <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+
+    <!-- Swiper Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</div>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+                <!-- Pilgrimage Places Section -->
+<!-- Pilgrimage Places Section -->
+<h3 class="pilgrimage-title">Pilgrimage Places</h3>
+<div class="swiper-container pilgrimage-swiper">
+    <div class="swiper-wrapper">
+        <!-- Badrinath Temple -->
+        <div class="swiper-slide destination" data-name="Badrinath Temple">
+            <img src="badrinath.jpeg" alt="Badrinath Temple">
+            <div class="number-box">1</div>
+            <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Badrinath Temple</p>
+        </div>
+
+        <!-- Kedarnath Temple -->
+        <div class="swiper-slide destination" data-name="Kedarnath Temple">
+            <img src="kedarnath.jpeg" alt="Kedarnath Temple">
+            <div class="number-box">2</div>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Kedarnath Temple</p>
+        </div>
+
+        <!-- Gangotri Temple -->
+        <div class="swiper-slide destination" data-name="Gangotri Temple">
+            <img src="Gangotri.jpeg" alt="Gangotri Temple">
+            <div class="number-box">3</div>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Gangotri Temple</p>
+        </div>
+
+        <!-- Yamunotri Temple -->
+        <div class="swiper-slide destination" data-name="Yamunotri Temple">
+            <img src="yamunotri.jpeg" alt="Yamunotri Temple">
+            <div class="number-box">4</div>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Yamunotri Temple</p>
+        </div>
+
+        <!-- Tungnath Temple -->
+        <div class="swiper-slide destination" data-name="Tungnath Temple">
+            <img src="tungnath.jpeg" alt="Tungnath Temple">
+            <div class="number-box">5</div>
+            <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Tungnath Temple</p>
+        </div>
+
+        <!-- Rudranath Temple -->
+        <div class="swiper-slide destination" data-name="Rudranath Temple">
+            <img src="https://miro.medium.com/max/1000/1*-He53dH2l_b8ojmTPOpBuw.jpeg" alt="Rudranath Temple">
+            <div class="number-box">6</div>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Rudranath Temple</p>
+        </div>
+
+        <!-- Madhyamaheshwar Temple -->
+        <div class="swiper-slide destination" data-name="Madhyamaheshwar Temple">
+            <img src="https://madeinindiamagazine.com.au/wp-content/uploads/2022/03/temple5.jpg" alt="Madhyamaheshwar Temple">
+            <div class="number-box">7</div>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Madhyamaheshwar Temple</p>
+        </div>
+
+        <!-- Kalpeshwar Temple -->
+        <div class="swiper-slide destination" data-name="Kalpeshwar Temple">
+            <img src="https://www.namasteindiatrip.org/wp-content/uploads/2019/01/Kalpeshwar-Mahadev.jpg" alt="Kalpeshwar Temple">
+            <div class="number-box">8</div>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Kalpeshwar Temple</p>
+        </div>
+
+        <!-- Hemkund Sahib -->
+        <div class="swiper-slide destination" data-name="Hemkund Sahib">
+            <img src="https://cultureandheritage.org/wp-content/uploads/2013/01/gurdwara_sri_hemkunt_sahib6.jpg" alt="Hemkund Sahib">
+            <div class="number-box">9</div>
+            <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Hemkund Sahib</p>
+        </div>
+
+        <!-- Kainchi Dham -->
+        <div class="swiper-slide destination" data-name="Kainchi Dham">
+            <img src="https://firstrek.in/wp-content/uploads/2023/04/2022-10-22.jpg" alt="Kainchi Dham">
+            <div class="number-box">10</div>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Kainchi Dham</p>
+        </div>
+    </div>
+
+    <!-- Swiper Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</div>
+<!-- Swiper & Font Awesome Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+<!-- Trekking Destinations Section -->
+<h3 class="trekking-title">Trekking Destinations</h3>
+<div class="swiper-container trekking-swiper">
+    <div class="swiper-wrapper">
+        <!-- Valley of Flowers -->
+        <div class="swiper-slide destination" data-name="Valley of Flowers">
+            <img src="valley of flowers.jpeg" alt="Valley of Flowers">
+            <div class="number-box">1</div>
+            <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Valley of Flowers</p>
+        </div>
+
+        <!-- Roopkund Trek -->
+        <div class="swiper-slide destination" data-name="Roopkund Trek">
+            <img src="Roopkund treak.jpeg" alt="Roopkund Trek">
+            <div class="number-box">2</div>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Roopkund Trek</p>
+        </div>
+
+        <!-- Kedarkantha Trek -->
+        <div class="swiper-slide destination" data-name="Kedarkantha Trek">
+            <img src="kedarkantha.jpeg" alt="Kedarkantha Trek">
+            <div class="number-box">3</div>
+            <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Kedarkantha Trek</p>
+        </div>
+
+        <!-- Har Ki Dun -->
+        <div class="swiper-slide destination" data-name="Har Ki Dun">
+            <img src="Har ki dun.jpeg" alt="Har Ki Dun">
+            <div class="number-box">4</div>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Har Ki Dun</p>
+        </div>
+
+        <!-- Nag Tibba -->
+        <div class="swiper-slide destination" data-name="Nag Tibba">
+            <img src="Nag Tibba.jpeg" alt="Nag Tibba">
+            <div class="number-box">5</div>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Nag Tibba</p>
+        </div>
+
+        <!-- Bali Pass Trek -->
+        <div class="swiper-slide destination" data-name="Bali Pass Trek">
+            <img src="https://trekveda.com/img/packageImage/bali-pass-trek-image-1.jpg" alt="Bali Pass Trek">
+            <div class="number-box">6</div>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Bali Pass Trek</p>
+        </div>
+
+        <!-- Pindari Glacier Trek -->
+        <div class="swiper-slide destination" data-name="Pindari Glacier Trek">
+            <img src="https://www.holidaymoods.in/uploaded_image/tour_studio_images/dest_images/main_image/main_1563362291.jpg" alt="Pindari Glacier Trek">
+            <div class="number-box">7</div>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Pindari Glacier Trek</p>
+        </div>
+
+        <!-- Satopanth Lake Trek -->
+        <div class="swiper-slide destination" data-name="Satopanth Lake Trek">
+            <img src="https://rishikeshdaytour.com/blog/wp-content/uploads/2022/11/Satopanth-Glacier.jpg" alt="Satopanth Lake Trek">
+            <div class="number-box">8</div>
+            <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Satopanth Lake Trek</p>
+        </div>
+
+        <!-- Chandrashila Trek -->
+        <div class="swiper-slide destination" data-name="Chandrashila Trek">
+            <img src="chan.jpg" alt="Chandrashila Trek">
+            <div class="number-box">9</div>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Chandrashila Trek</p>
+        </div>
+
+        <!-- Dodital Trek -->
+        <div class="swiper-slide destination" data-name="Dodital Trek">
+            <img src="https://himalayanambition.in/wp-content/uploads/2022/09/Dodital-Lake-scaled-1.jpeg" alt="Dodital Trek">
+            <div class="number-box">10</div>
+            <div class="rating-stars">⭐⭐⭐⭐</div>
+            <div class="wishlist-heart"><i class="fas fa-heart"></i></div>
+            <p>Dodital Trek</p>
+        </div>
+    </div>
+
+    <!-- Swiper Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</div>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+<table class="footer-table">
+    <tr>
+        <!-- Devभूमि & Social Icons -->
+        <td class="footer-cell">
+            <h2 class="devbhoomi-title">Devभूमि Explore</h2>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </td>
+
+        <!-- Helpful Links -->
+        <td class="footer-cell">
+            <h2 class="links-title">Helpful Links</h2>
+            <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </td>
+
+        <!-- Contact Information -->
+        <td class="footer-cell">
+            <h2 class="contact-title">Contact</h2>
+            <p>Email: support@devbhoomi.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Address: Uttarakhand, India</p>
+        </td>
+    </tr>
+</table>
+</div>
+    </section>
+</body>
+</html>    

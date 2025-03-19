@@ -1,0 +1,159 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    background-color: #0959da;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.home-button {
+    position: absolute;
+    right: 20px;
+    background: white;
+    color: #0959da;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.home-button:hover {
+    background: #063ea8;
+    color: white;
+}
+
+/* Auli Container */
+.auli-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 40px;
+    width: 90%;
+    max-width: 1100px;
+}
+
+/* Left Section */
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Auli Image */
+.auli-image {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Categories Section */
+.categories-section {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.category-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.category-buttons button {
+    background-color: #0959da;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.category-buttons button:hover {
+    background-color: #063ea8;
+}
+
+/* Popular Destinations Section */
+.popular-destinations {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 1100px;
+    text-align: center;
+}
+
+.popular-destinations h2 {
+    color: #0959da;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Horizontal Destination Cards */
+.destination-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.destination {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.destination img {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.destination h3 {
+    color: #063ea8;
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.destination p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #0959da;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}

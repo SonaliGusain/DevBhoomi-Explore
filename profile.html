@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Devभूमि Explore</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="left-section">
+        <h1><span class="blue-text">Devभूमि</span> <span class="white-text">Explore</span></h1>
+    </div>
+    <div class="right-section">
+        <button class="btn blue-btn" onclick="window.location.href='index.html';"><i class="fas fa-home"></i> Home</button>
+    </div>
+</header>
+
+<!-- Profile Section -->
+<section class="profile-container">
+    <div class="profile-card">
+        <div class="profile-header">
+            <img src="profile-placeholder.png" alt="Profile Picture" class="profile-pic">
+            <h2 id="username">John Doe</h2>
+            <p id="email">johndoe@example.com</p>
+            <button class="edit-btn" onclick="editProfile()">Edit Profile</button>
+        </div>
+        <div class="profile-details">
+            <h3>Trip History</h3>
+            <ul id="trip-history">
+                <li>Mussoorie - 2 Days (Feb 2025)</li>
+                <li>Rishikesh - 3 Days (Jan 2025)</li>
+            </ul>
+
+            <h3>Saved Trips</h3>
+            <ul id="saved-trips">
+                <li>Chopta - Planned for March 2025</li>
+            </ul>
+
+            <h3>Travel Preferences</h3>
+            <p><strong>Budget:</strong> Moderate</p>
+            <p><strong>Food Preference:</strong> Vegetarian</p>
+            <p><strong>Stay Preference:</strong> Hotels</p>
+
+            <h3>Settings</h3>
+            <button class="btn blue-btn logout-btn" onclick="logout()">Log Out</button>
+        </div>
+    </div>
+</section>
+
+<script>
+    function editProfile() {
+        alert("Edit profile feature coming soon!");
+    }
+
+    function logout() {
+        alert("Logging out...");
+        window.location.href = 'login.html';
+    }
+</script>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+    }
+
+    .profile-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .profile-card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 400px;
+        text-align: center;
+    }
+
+    .profile-header {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .edit-btn {
+        background: #0959da;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .profile-details {
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    h3 {
+        margin-top: 10px;
+        color: #0959da;
+    }
+
+    .logout-btn {
+        width: 100%;
+        background: red;
+    }
+</style>
+
+</body>
+</html>
